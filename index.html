@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Personal Website | Your Name</title> <!-- EDITABLE: Website title -->
+    <link rel="stylesheet" href="style.css">
+    <!-- EDITABLE: Add your preferred icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- EDITABLE: Navigation bar -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">Xuanpei Chen</div> <!-- EDITABLE: Your name or website name -->
+                <ul class="nav-links" id="navLinks">
+                    <!-- EDITABLE: Navigation links -->
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- EDITABLE: Hero section -->
+    <section class="hero" id="home">
+        <!-- <div id="particles-js"> -->
+            <iframe src="https://caesar723.github.io/3D-Wall-Paper-clock/main.HTML" id="particles-js"></iframe>
+        <!-- </div> -->
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <!-- EDITABLE: Personal introduction -->
+                    <h1>Hello, I'm <span class="highlight">Xuanpei Chen</span></h1>
+                    <p id="typing-text" class="typing-text">Game Developer | Backend Developer | AI Developer | UI Developer</p>
+                    <p>I specialize in creating a whole game from scratch, including the game design, game development, and game deployment. I also have some experience in backend development and AI development.</p>
+                    <a href="#contact" class="btn">Contact Me</a>
+                </div>
+                <div class="hero-image">
+                    <!-- EDITABLE: Personal photo -->
+                    <img src="me.JPG" style="width: 300px; height: 300px; border-radius: 50%;" alt="Profile Photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDITABLE: About section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <!-- EDITABLE: Personal bio -->
+                    <p>Hello! I'm a passionate game developer currently studying at the University of Manchester. I love turning ideas into powerful games that deliver exceptional user experiences.</p>
+                    <p>Throughout my academic journey, I've had the opportunity to work on various projects that have honed my skills in game development and design.</p>
+                    <p>My approach combines technical expertise with creative problem-solving. I believe in clean, efficient code and user-centered design principles that make technology accessible and enjoyable for everyone.</p>
+                    
+                    <div class="about-tabs">
+                        <button class="tab-btn active" data-tab="skills">My Skills</button>
+                           <button class="tab-btn" data-tab="experience">Experience</button>
+                        <button class="tab-btn" data-tab="education">Education</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="skills-tab">
+                        <p>I specialize in game development and have a particular interest in integrating AI into games. This is my passion, and I often practice my skills by coding. Currently, Python is my primary language, and JavaScript is my second most familiar language. My goal is to use reinforcement learning to train any game.</p>
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Caesar723&layout=compact&theme=dark" alt="Top Languages" style="width: 50%; max-width: 300px; margin-top: 20px;">
+                    </div>
+                    
+                    <div class="tab-content" id="experience-tab">
+                        <p>During the summer, I interned at Illuvator Corex and completed a personal project to help the company improve efficiency. At school, I participated in various competitions such as the Google AI Challenge and Game Jam.</p>
+                    </div>
+                    
+                    <div class="tab-content" id="education-tab">
+                        <p>I am currently an undergraduate student at the University of Manchester (2024-2027). Previously, I attended Shanghai Thomas School for high school, where I achieved A* A* A* A in Further Mathematics, Pure Mathematics, Physics, and Computer Science.</p>
+                        <p>I'm committed to continuous learning and regularly attend workshops and conferences to stay updated with the latest technologies.</p>
+                    </div>
+                    
+                    <!-- EDITABLE: Personal details -->
+                    <div style="margin-top: 2rem;">
+                        <p><strong>Name:</strong> Xuanpei Chen</p>
+                        <p><strong>Age:</strong> 20</p>
+                        <p><strong>Location:</strong> China , shanghai</p>
+                        <p><strong>Email:</strong> caesar20040723@gmail.com</p>
+                        <p><strong>Languages:</strong> English, Chinese</p>
+                    </div>
+                    <a href="xuanpei cv.pdf" class="btn" style="margin-top: 1rem;">CV（English）</a> <!-- EDITABLE: Resume link -->
+                    <a href="cv3.pdf" class="btn" style="margin-top: 1rem;">CV（Chinese）</a> <!-- EDITABLE: Resume link -->
+                </div>
+                <div class="about-image">
+                    <!-- EDITABLE: About image -->
+                    <img src="aboutme.jpg" alt="About Me">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDITABLE: Services section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Services</h2>
+            </div>
+            <div class="services-container">
+                <!-- EDITABLE: Service cards -->
+                <div class="service-card" data-delay="0">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Custom website development with clean code and modern technologies. I build responsive, fast-loading websites that work across all devices.</p>
+                </div>
+                <div class="service-card" data-delay="200">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Game Development</h3>
+                    <p>Web game development with HTML5, CSS3, and JavaScript. Meanwhile, I also have some experience in game development with Unity.</p>
+                </div>
+                <div class="service-card" data-delay="600">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend Development</h3>
+                    <p>Robust server-side applications with FastAPI, and various database systems. API development, authentication, asynchronous programming, and data management.</p>
+                </div>
+                <div class="service-card" data-delay="800">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI Development</h3>
+                    <p>I have some experience in AI development with Python and Pytorch. I use reinforcement learning to train the AI agent to play the game.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- EDITABLE: Skills section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Skills</h2>
+            </div>
+            <div class="skills-container">
+                <!-- EDITABLE: Skill cards -->
+                <div class="skill-card" data-delay="0">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Proficient in HTML5 semantic tags and best practices for well-structured web pages.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="65"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-delay="200">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Skilled in CSS3 for responsive designs, animations, and modern layouts.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="60"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-delay="400">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Expert in JavaScript and modern ES6+ features for interactive user experiences. Canvas2D.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="95"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-delay="600">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                    <p>Proficient in Python and its libraries, such as NumPy, Pandas, and Pytorch.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="100"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-delay="800">
+                    <i class="fab fa-unity"></i>
+                    <h3>Unity</h3>
+                    <p>Win the game jam with Unity and C#.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-delay="1000">
+                    <i class="fas fa-database"></i>
+                    <h3>Databases</h3>
+                    <p>Proficient with MongoDB, MySQL, and async programming with FastAPI.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="70"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-delay="1200">
+                    <i class="fab fa-docker"></i>
+                    <h3>Docker</h3>
+                    <p>Proficient in Docker and its libraries, such as Docker Compose and Docker Machine.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-delay="1400">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control and collaborative development workflows.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="90"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDITABLE: Experience section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Experience</h2>
+            </div>
+            <div class="timeline">
+                <!-- EDITABLE: Timeline items -->
+                <div class="timeline-item" data-delay="0">
+                    <div class="timeline-content">
+                        <span class="date">Nov. 13, 2024 - Nov. 29, 2024</span>
+                        <h3>Google Chrome Built-in AI Challenge</h3>
+                        <h4>Noddy</h4>
+                        <p>Developed a Chrome extension using JavaScript and HTML. The extension allows users to search for information using natural language queries and receive instant answers from a built-in AI model. The extension also provides a knowledge graph to guide users through the search results.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-delay="0">
+                    <div class="timeline-content">
+                        <span class="date">Oct. 27, 2024 - Oct. 30, 2024</span>
+                        <h3>University of Manchester Autumn Game Jam 2024</h3>
+                        <h4>Stop Ghosting Me</h4>
+                        <p>Developed a game using Unity as the game engine in a two-person team. Achieved second place in the competition with innovative multi-window interactions. Use of Netcode for establishing local connections and enabling multi-window interactions.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-delay="20">
+                    <div class="timeline-content">
+                        <span class="date">Jul 2024 - Sep 2024</span>
+                        <h3>Test engineering engineer internship</h3>
+                        <h4>Iluvatar CoreX</h4>
+                        <p>During the summer, I completed a two-month internship where I learned to use PyTorch and built DQN and PPO models.I contributed to a project called "auto dump," which runs on Jenkins to automatically dump operators for various small models.</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- EDITABLE: Education section -->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education & Certifications</h2>
+            </div>
+            <div class="education-container">
+                <!-- EDITABLE: Education cards -->
+                <div class="education-card" data-delay="0">
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <h4>University of Manchester</h4>
+                    <span class="date">2024 - 2027</span>
+                    <p>I'm the first year student at the University of Manchester, studying Computer Science. I'm expected to graduate in 2027. During my study, I always try to learn something new and challenge myself.</p>
+                </div>
+                <div class="education-card" data-delay="200">
+                    <h3>Test engineering engineer internship</h3>
+                    <h4>Iluvatar CoreX</h4>
+                    <span class="date">Jul 2024 - Sep 2024</span>
+                    <p>During the summer, I completed a two-month internship where I learned to use PyTorch and built DQN and PPO models.I contributed to a project called "auto dump," which runs on Jenkins to automatically dump operators for various small models.</p>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+   
+
+   
+
+    <!-- EDITABLE: Projects section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+            </div>
+            <!-- <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="app">App Development</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+            </div> -->
+            <div class="projects-container">
+                <!-- EDITABLE: Project cards -->
+                <div class="project-card" data-category="web" data-delay="0">
+                    <div class="project-image">
+                        <img src="projects/magic.png" alt="Project 1">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://www.xuanpei-chen.top:8000"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/Caesar723/Magic"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Magic Fan Made</h3>
+                        <p>A full-stack card game with Docker deployment on Alibaba Cloud. With scratched 3D effects and PPO reinforcement learning AI. Contain pvp mode and pve mode. Include opening package and card creation. Also have a Card Studio to create your own card.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Full Stack</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Pytorch</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Docker</span>
+                            <span class="project-tag">FastAPI</span>
+                            <span class="project-tag">Asyncio</span>
+                            <span class="project-tag">Alibaba Cloud</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="app" data-delay="200">
+                    <div class="project-image">
+                        <img src="projects/firework.png" alt="Project 2">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Caesar723/Birthday_gift_for_KaKa/assets/76422688/beff2f71-5088-456c-96aa-3a18d289ca1d"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/Caesar723/Birthday_gift_for_KaKa"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Birthday Gift</h3>
+                        <p>A birthday gift for my friend. It's a 3D interactive fireworks show. With a nice UI and a smooth animation. Can contain 10000~50000 particles.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">OpenGL</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">NumPy</span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design" data-delay="400">
+                    <div class="project-image">
+                        <img src="projects/theday.png" alt="Project 3">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://www.bilibili.com/video/BV1SL4y1K7Rq/?spm_id_from=333.1007.top_right_bar_window_default_collection.content.click"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/Caesar723/TheDayOfSagittarius3"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>TheDayOfSagittarius3</h3>
+                        <p>A game made by pygame. Can use socket to connect with other players. Have a nice AI to play with. This game is originally in the animation called "The Melancholy of Haruhi Suzumiya". I made it because I love this animation. </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Pygame</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Socket</span>
+                            <span class="project-tag">C++</span>
+                            <span class="project-tag">cpython</span>
+                            <span class="project-tag">multi-thread</span>
+                            <span class="project-tag">multi-process</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web" data-delay="600">
+                    <div class="project-image">
+                        <img src="projects/Ghosting.png" alt="Project 4">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/user-attachments/assets/edfa2a05-e1f3-4ca9-b643-714f7f50e606"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/Caesar723/Stop-Ghosting-Me"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Stop Ghosting Me</h3>
+                        <p>Made for the University of Manchester Autumn Game Jam 2024. 2nd Place. Use of Netcode for establishing local connections and enabling multi-window interactions.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Unity</span>
+                            <span class="project-tag">Netcode</span>
+                            <span class="project-tag">C#</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="app" data-delay="800">
+                    <div class="project-image">
+                        <img src="projects/maze.png" alt="Project 5">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://user-images.githubusercontent.com/76422688/222311837-1f27524d-b55d-4e75-b08d-17865338f1cc.mp4"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/Caesar723/MAZE_3D"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>3D Maze</h3>
+                        <p>A 3D maze game made from scratch. Used to practice my 3D programming skills.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">NumPy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design" data-delay="1000">
+                    <div class="project-image">
+                        <img src="projects/noddy.png" alt="Project 6">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://devpost.com/software/noddy"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/Menma2021/Noddy"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Noddy</h3>
+                        <p>Simply enter your keyword into Noddy, and instantly get a customized knowledge graph to guide you. Break down complex ideas into clear, manageable subtopics.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Prompt Engineering</span>
+                            <span class="project-tag">BuildIn API (Gemini)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDITABLE: Contact section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <!-- EDITABLE: Contact details -->
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Shanghai, China</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>caesar20040723@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+86 13122531903</p>
+                    </div>
+                    <!-- <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <p>www.yourwebsite.com</p>
+                    </div> -->
+                    
+                    <h3 style="margin-top: 2rem;">Available For</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-check"></i>
+                        <p>Freelance Projects</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-check"></i>
+                        <p>Full-time Positions</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-check"></i>
+                        <p>Consulting</p>
+                    </div>
+                    
+                    <!-- Map container -->
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13645.007000000001!2d121.47370199999999!3d31.230416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b27040b1f53c33%3A0x295129423c364a35!2sShanghai%2C%20China!5e0!3m2!1sen!2s!4v1710412800000!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <!-- <div class="contact-form">
+                    <h3>Send Message</h3>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- EDITABLE: Footer -->
+    <footer>
+        <div class="container">
+            <ul class="social-links">
+                <!-- EDITABLE: Social media links -->
+                <li><a href="https://github.com/caesar723"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/xuanpeichen"><i class="fab fa-linkedin"></i></a></li>
+                
+            </ul>
+            <p>&copy; 2025 Xuanpei Chen. All Rights Reserved.</p> <!-- EDITABLE: Copyright info -->
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Particles.js for dynamic background -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- EDITABLE: Add your JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
