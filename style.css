@@ -111,26 +111,26 @@ nav {
 
 /* EDITABLE: Hero section styles */
 .hero {
-    height: calc(100vh + 60px);
+    height: calc(100vh + 360px);
     display: flex;
     align-items: end;
     background-color: var(--darker-bg);
-    /* margin-top: 60px; */
+    margin-top: 60px;
     position: relative;
     overflow: hidden;
+    flex-direction: column;
 }
 
 
-/* #particles-js {
-    position: absolute;
+#frame {
+    position: relative;
     width: 100%;
-    padding-bottom: 56.25%; 
-    height: 0; 
-    overflow: hidden;
-} */
+    height:30%;
+}
 
-iframe {
+#iframe-particles {
     position: absolute;
+    /* position: flex; */
     top: 0;
     left: 0;
     width: 1500px;
@@ -151,6 +151,14 @@ iframe {
 .hero-text {
     flex: 1;
     animation: fadeInLeft 1s ease-out;
+    font-size: 2rem;
+    width: calc(90% - 300px);
+}
+@media (max-width: 768px) {
+    .hero-text {
+        width: 90%;
+        margin-top: 10px;
+    }
 }
 
 .hero-image {
@@ -160,7 +168,7 @@ iframe {
 }
 
 .hero-image img {
-    max-width: 100%;
+    /* max-width: 100%; */
     border-radius: 50%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     border: 5px solid var(--medium-gray);
@@ -204,6 +212,7 @@ h1 {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     color: #aaaaaa;
+    overflow: line-clamp;
 }
 
 .typing-text {
@@ -1314,6 +1323,7 @@ footer {
     .hero-content, .about-content {
         flex-direction: column;
         text-align: center;
+       
     }
 
     .hero-image, .about-image {
@@ -1346,7 +1356,7 @@ footer {
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 6.5vw;
     }
 
     .stats-container {
